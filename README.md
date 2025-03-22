@@ -26,14 +26,13 @@ This is a FastAPI-based project that finds similar documents using sentence embe
 ## 📂 Project Structure
 
 document_similarity_api/ 
-├── main.py 
-├── data_loader.py 
-├── embedding.py 
-├── vector_store.py 
-├── documents.csv 
-├── requirements.txt 
+├── main.py
+├── data_loader.py
+├── embedding.py
+├── vector_store.py
+├── documents.csv
+├── requirements.txt
 └── README.md
-
 
 ---
 
@@ -53,11 +52,12 @@ Visit: http://127.0.0.1:8000/docs for the interactive API.
 🔗 API Endpoints
 
 GET /api/search?q=your+query&metric=cosine
-q: search query (required)
 
+q: search query (required)
 metric: l2 (default), cosine, or dot
 
 POST /api/add
+
 Add a new document:
 {
   "text": "This is a new document."
